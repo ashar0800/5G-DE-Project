@@ -4,3 +4,4 @@
    streamlit
    confluent-kafka
    scipy
+   prefect
