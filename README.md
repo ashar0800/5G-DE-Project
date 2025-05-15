@@ -49,13 +49,19 @@ This project simulates dynamic resource allocation in 5G cellular networks using
 
    * Add your Kafka credentials to `config.ini` under `[CONFLUENT_CLOUD]`.
 
-3. **Run Orchestrator (Recommended)**
+3. **Start Server**
+
+   ```bash
+   prefect server start
+   ```
+   
+4. **Run Orchestrator (Recommended)**
 
    ```bash
    python orchestrator.py
    ```
 
-4. **OR Start Services Manually**
+5. **OR Start Services Manually**
 
    ```bash
    python producer.py
@@ -72,7 +78,7 @@ This project simulates dynamic resource allocation in 5G cellular networks using
 
 ## 📊 Dashboard
 
-Run via `ui.py` using Streamlit to see:
+The Streamlit dashboard displays several kinds of metrics:
 
 * Current network metrics (utilization, latency, users)
 * Latest predictions & allocation actions
